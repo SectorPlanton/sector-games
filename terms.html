@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Terms of Use – Sector Arcade | sector-games.com</title>
+  <meta name="description" content="Terms of Use for Sector Arcade (sector-games.com). Read the conditions for using our free browser arcade games website." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.sector-games.com/terms.html" />
+  <meta property="og:title" content="Terms of Use – Sector Arcade" />
+  <meta property="og:description" content="Terms of Use for Sector Arcade – free browser arcade games at sector-games.com." />
+  <meta property="og:url" content="https://www.sector-games.com/terms.html" />
+  <meta property="og:type" content="website" />
+
+    <!-- Favicons: iOS / Android / PWA / Windows -->
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png" />
+  <link rel="icon" type="image/png" sizes="512x512" href="icons/icon-512.png" />
+  <link rel="icon" type="image/png" sizes="32x32"  href="icons/icon-128.png" />
+  <link rel="icon" type="image/png" sizes="16x16"  href="icons/icon-72.png" />
+  <link rel="shortcut icon" href="favicon.ico" />
+  <meta name="msapplication-TileImage" content="icons/icon-144.png" />
+  <meta name="msapplication-TileColor" content="#04060f" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Sector Arcade" />
+  <meta name="theme-color" content="#00f0ff" />
+  <link rel="manifest" href="manifest.json" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./style.css" />
+
+  <style>
+    .legal-wrap { max-width:800px; margin:0 auto; padding:clamp(2rem,5vw,4rem) clamp(1rem,4vw,2.5rem); }
+    .legal-title { font-family:'Orbitron',monospace; font-size:clamp(1.5rem,4vw,2rem); font-weight:900; background:linear-gradient(135deg,#fff,var(--cyan)); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; margin-bottom:0.4rem; }
+    .legal-date { font-size:0.78rem; color:var(--text-dim); margin-bottom:2.5rem; letter-spacing:0.08em; }
+    .legal-wrap h2 { font-family:'Orbitron',monospace; font-size:0.82rem; font-weight:700; color:var(--cyan); letter-spacing:0.14em; text-transform:uppercase; margin:2.2rem 0 0.9rem; padding-bottom:0.5rem; border-bottom:1px solid var(--border); }
+    .legal-wrap p, .legal-wrap li { font-size:0.88rem; color:var(--text-mid); line-height:1.85; margin-bottom:0.75rem; }
+    .legal-wrap ul { padding-left:1.4rem; margin-bottom:0.75rem; }
+    .legal-wrap ul li::marker { color:var(--cyan); }
+    .legal-wrap strong { color:var(--text); font-weight:600; }
+    .legal-wrap a { color:var(--cyan); transition:opacity 0.2s; }
+    .legal-wrap a:hover { opacity:0.75; }
+    .back-link { display:inline-flex; align-items:center; gap:6px; color:var(--text-dim); font-size:0.78rem; letter-spacing:0.08em; margin-bottom:2rem; transition:color 0.2s; }
+    .back-link:hover { color:var(--cyan); }
+  </style>
+</head>
+<body>
+
+<canvas id="star-canvas" aria-hidden="true"></canvas>
+
+<nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+  <a href="./" class="nav-logo" aria-label="Sector Arcade – Home">
+    <div class="nav-logo-icon" aria-hidden="true">🕹️</div>
+    <span class="nav-logo-text"><span class="c1">SECTOR</span><span class="c2">&nbsp;ARCADE</span></span>
+  </a>
+  <ul class="nav-links" role="list">
+    <li class="nav-dropdown">
+      <a href="./#games">Games</a>
+      <ul class="dropdown-menu" role="list">
+        <li><a href="./games/sector-arkanoid.html"><span class="dd-icon">🧱</span> Sector Arkanoid</a></li>
+        <li><a href="./games/galaxy-assault.html"><span class="dd-icon">🚀</span> Galaxy Assault</a></li>
+        <li><a href="./games/void-bird.html"><span class="dd-icon">🐦</span> Void Bird</a></li>
+        <li><a href="./games/castle-destroyer.html"><span class="dd-icon">🏰</span> Castle Destroyer</a></li>
+        <li><a href="./games/neon-blocks.html"><span class="dd-icon">🟪</span> Neon Blocks</a></li>
+        <li><a href="./games/serpent-ultra.html"><span class="dd-icon">🐍</span> Serpent Ultra</a></li>
+      </ul>
+    </li>
+    <li><a href="./#coming-soon">Coming Soon</a></li>
+    <li><a href="./privacy.html">Privacy</a></li>
+    <li><a href="./terms.html" class="active">Terms</a></li>
+    <li><a href="./contact.html">Contact</a></li>
+  </ul>
+  <a href="./#games" class="nav-cta">▶ Play Now</a>
+  <button class="hamburger" id="hamburger-btn" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-menu" type="button">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation">
+  <ul role="list">
+    <li><div class="mm-section-title">Games</div></li>
+    <li><a href="./games/sector-arkanoid.html"><span class="m-icon">🧱</span> Sector Arkanoid</a></li>
+    <li><a href="./games/galaxy-assault.html"><span class="m-icon">🚀</span> Galaxy Assault</a></li>
+    <li><a href="./games/void-bird.html"><span class="m-icon">🐦</span> Void Bird</a></li>
+    <li><a href="./games/castle-destroyer.html"><span class="m-icon">🏰</span> Castle Destroyer</a></li>
+    <li><a href="./games/neon-blocks.html"><span class="m-icon">🟪</span> Neon Blocks</a></li>
+    <li><a href="./games/serpent-ultra.html"><span class="m-icon">🐍</span> Serpent Ultra</a></li>
+    <li><div class="mm-section-title">Info</div></li>
+    <li><a href="./#coming-soon"><span class="m-icon">🔜</span> Coming Soon</a></li>
+    <li><a href="./privacy.html"><span class="m-icon">🔒</span> Privacy Policy</a></li>
+    <li><a href="./terms.html"><span class="m-icon">📄</span> Terms of Use</a></li>
+    <li><a href="./cookies.html"><span class="m-icon">🍪</span> Cookie Policy</a></li>
+    <li><a href="./contact.html"><span class="m-icon">✉️</span> Contact</a></li>
+  </ul>
+  <div class="mm-cta"><a href="./#games">▶ Play Free Now</a></div>
+</div>
+
+<div class="page">
+  <div class="legal-wrap">
+    <a href="./" class="back-link">← Back to Games</a>
+    <h1 class="legal-title">Terms of Use</h1>
+    <p class="legal-date">Last updated: January 2025</p>
+
+    <h2>1. Acceptance of Terms</h2>
+    <p>By accessing and using Sector Arcade at <a href="https://www.sector-games.com">www.sector-games.com</a> ("the site"), you accept and agree to be bound by these Terms of Use. If you do not agree, please do not use the site.</p>
+
+    <h2>2. Use of the Site</h2>
+    <p>You may use this site for personal, non-commercial entertainment purposes only. You agree not to:</p>
+    <ul>
+      <li>Use the site in any unlawful manner</li>
+      <li>Attempt to gain unauthorized access to any part of the site</li>
+      <li>Scrape, crawl, or copy content without permission</li>
+      <li>Interfere with or disrupt the site's operation</li>
+    </ul>
+
+    <h2>3. Intellectual Property</h2>
+    <p>All games, graphics, code, and content on this site are the property of Sector Arcade or their respective creators. You may not reproduce, distribute, or create derivative works without explicit written permission.</p>
+
+    <h2>4. Advertisements</h2>
+    <p>The site displays third-party advertisements. We are not responsible for the content of these ads or any products/services they promote. Interacting with ads is at your own discretion.</p>
+
+    <h2>5. Disclaimer of Warranties</h2>
+    <p>The site is provided "as is" without warranties of any kind, express or implied. We do not guarantee that the site will be error-free, uninterrupted, or free of viruses.</p>
+
+    <h2>6. Limitation of Liability</h2>
+    <p>To the maximum extent permitted by law, Sector Arcade shall not be liable for any indirect, incidental, special, or consequential damages arising from your use of the site.</p>
+
+    <h2>7. Changes to Terms</h2>
+    <p>We reserve the right to modify these terms at any time. Continued use of the site after changes constitutes acceptance of the new terms.</p>
+
+    <h2>8. Contact</h2>
+    <p>Questions about these terms? Visit our <a href="./contact.html">Contact page</a>.</p>
+  </div>
+
+  <footer role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-brand-logo"><div class="fli">🕹️</div><span class="flt"><span class="c1">SECTOR</span><span class="c2">&nbsp;ARCADE</span></span></div>
+          <p>Free browser arcade games built for instant fun. No installs, no signups — just play at <strong>sector-games.com</strong>.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Games</h5>
+          <a href="./games/sector-arkanoid.html">Sector Arkanoid</a>
+          <a href="./games/galaxy-assault.html">Galaxy Assault</a>
+          <a href="./games/void-bird.html">Void Bird</a>
+          <a href="./games/castle-destroyer.html">Castle Destroyer</a>
+          <a href="./games/neon-blocks.html">Neon Blocks</a>
+          <a href="./games/serpent-ultra.html">Serpent Ultra</a>
+        </div>
+        <div class="footer-col">
+          <h5>Legal</h5>
+          <a href="./privacy.html">Privacy Policy</a>
+          <a href="./terms.html">Terms of Use</a>
+          <a href="./cookies.html">Cookie Policy</a>
+          <a href="./contact.html">Contact Us</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Sector Arcade · <a href="https://www.sector-games.com">sector-games.com</a> · All rights reserved.</p>
+        <p>Made with ❤️ for arcade fans — <a href="./">Back to top ↑</a></p>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<script src="./main.js"></script>
+</body>
+</html>

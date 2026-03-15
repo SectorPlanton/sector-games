@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ══ PRIMARY SEO ══ -->
+  <title>Sector Arkanoid – Free Brick Breaker Game Online | Sector Arcade</title>
+  <meta name="description" content="Play Sector Arkanoid free online — a classic brick breaker arcade game in your browser. No download, no signup. Smash bricks, grab power-ups and beat all levels!" />
+  <meta name="keywords" content="sector arkanoid, free arkanoid online, brick breaker game, play arkanoid browser, free brick breaker no download, arcade breakout game online" />
+  <meta name="author" content="Sector Arcade" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <link rel="canonical" href="https://www.sector-games.com/games/sector-arkanoid.html" />
+
+  <!-- ══ OPEN GRAPH ══ -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Sector Arcade" />
+  <meta property="og:title" content="Sector Arkanoid – Free Brick Breaker Game Online" />
+  <meta property="og:description" content="Classic brick breaker in your browser. No download, no signup. Smash bricks, grab power-ups, beat all levels!" />
+  <meta property="og:url" content="https://www.sector-games.com/games/sector-arkanoid.html" />
+  <meta property="og:image" content="https://sectorplanton.github.io/sector-games/og-image.png" />
+
+  <!-- ══ TWITTER CARD ══ -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Sector Arkanoid – Free Brick Breaker Game Online" />
+  <meta name="twitter:description" content="Classic brick breaker in your browser. No download, no signup!" />
+  <meta name="twitter:image" content="https://sectorplanton.github.io/sector-games/og-image.png" />
+
+  <!-- ══ FAVICON ══ -->
+    <!-- Favicons: iOS / Android / PWA / Windows -->
+  <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="../icons/icon-192.png" />
+  <link rel="icon" type="image/png" sizes="512x512" href="../icons/icon-512.png" />
+  <link rel="icon" type="image/png" sizes="32x32"  href="../icons/icon-128.png" />
+  <link rel="icon" type="image/png" sizes="16x16"  href="../icons/icon-72.png" />
+  <link rel="shortcut icon" href="../favicon.ico" />
+  <meta name="msapplication-TileImage" content="../icons/icon-144.png" />
+  <meta name="msapplication-TileColor" content="#04060f" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Sector Arcade" />
+  <meta name="theme-color" content="#00f0ff" />
+  <link rel="manifest" href="../manifest.json" />
+  
+
+  <!-- ══ SCHEMA.ORG ══ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "VideoGame",
+    "name": "Sector Arkanoid",
+    "description": "A classic brick breaker arcade game playable free in your browser. Smash bricks with your paddle, collect power-ups and beat multiple levels.",
+    "url": "https://www.sector-games.com/games/sector-arkanoid.html",
+    "genre": ["Arcade", "Casual", "Puzzle"],
+    "gamePlatform": "Web Browser",
+    "applicationCategory": "Game",
+    "operatingSystem": "Any (Browser)",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+    "publisher": { "@type": "Organization", "name": "Sector Arcade", "url": "https://www.sector-games.com" },
+    "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.6", "reviewCount": "128", "bestRating": "5" }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.sector-games.com" },
+      { "@type": "ListItem", "position": 2, "name": "Games", "item": "https://www.sector-games.com/#games" },
+      { "@type": "ListItem", "position": 3, "name": "Sector Arkanoid", "item": "https://www.sector-games.com/games/sector-arkanoid.html" }
+    ]
+  }
+  </script>
+
+  <!-- ══ FONTS ══ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+
+<canvas id="star-canvas" aria-hidden="true"></canvas>
+
+<!-- ══ NAVBAR ══ -->
+<nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+  <a href="../" class="nav-logo" aria-label="Sector Arcade – Home">
+    <div class="nav-logo-icon" aria-hidden="true">🕹️</div>
+    <span class="nav-logo-text"><span class="c1">SECTOR</span><span class="c2">&nbsp;ARCADE</span></span>
+  </a>
+  <ul class="nav-links" role="list">
+    <li class="nav-dropdown">
+      <a href="../#games" class="active">Games</a>
+      <ul class="dropdown-menu" role="list">
+        <li><a href="./sector-arkanoid.html"><span class="dd-icon">🧱</span> Sector Arkanoid</a></li>
+        <li><a href="./galaxy-assault.html"><span class="dd-icon">🚀</span> Galaxy Assault</a></li>
+        <li><a href="./void-bird.html"><span class="dd-icon">🐦</span> Void Bird</a></li>
+        <li><a href="./castle-destroyer.html"><span class="dd-icon">🏰</span> Castle Destroyer</a></li>
+        <li><a href="./neon-blocks.html"><span class="dd-icon">🟪</span> Neon Blocks</a></li>
+        <li><a href="./serpent-ultra.html"><span class="dd-icon">🐍</span> Serpent Ultra</a></li>
+      </ul>
+    </li>
+    <li><a href="../#coming-soon">Coming Soon</a></li>
+    <li><a href="../privacy.html">Privacy</a></li>
+    <li><a href="../terms.html">Terms</a></li>
+    <li><a href="../contact.html">Contact</a></li>
+  </ul>
+  <a href="https://sectorplanton.github.io/SectorArkanoid/" target="_blank" rel="noopener noreferrer" class="nav-cta">▶ Play Now</a>
+  <button class="hamburger" id="hamburger-btn" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-menu" type="button">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- ══ MOBILE MENU ══ -->
+<div class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation">
+  <ul role="list">
+    <li><div class="mm-section-title">Games</div></li>
+    <li><a href="./sector-arkanoid.html"><span class="m-icon">🧱</span> Sector Arkanoid</a></li>
+    <li><a href="./galaxy-assault.html"><span class="m-icon">🚀</span> Galaxy Assault</a></li>
+    <li><a href="./void-bird.html"><span class="m-icon">🐦</span> Void Bird</a></li>
+    <li><a href="./castle-destroyer.html"><span class="m-icon">🏰</span> Castle Destroyer</a></li>
+    <li><a href="./neon-blocks.html"><span class="m-icon">🟪</span> Neon Blocks</a></li>
+    <li><a href="./serpent-ultra.html"><span class="m-icon">🐍</span> Serpent Ultra</a></li>
+    <li><div class="mm-section-title">Info</div></li>
+    <li><a href="../#coming-soon"><span class="m-icon">🔜</span> Coming Soon</a></li>
+    <li><a href="../privacy.html"><span class="m-icon">🔒</span> Privacy Policy</a></li>
+    <li><a href="../terms.html"><span class="m-icon">📄</span> Terms of Use</a></li>
+    <li><a href="../cookies.html"><span class="m-icon">🍪</span> Cookie Policy</a></li>
+    <li><a href="../contact.html"><span class="m-icon">✉️</span> Contact</a></li>
+  </ul>
+  <div class="mm-cta"><a href="https://sectorplanton.github.io/SectorArkanoid/" target="_blank" rel="noopener noreferrer">▶ Play Free Now</a></div>
+</div>
+
+<div class="page">
+
+  <!-- TOP AD -->
+  <div class="ad-bar" aria-label="Advertisement">
+    <div class="ad-unit leaderboard">
+      <script>atOptions={'key':'1ee2f40af6f2f7b02d99cfc5235a803d','format':'iframe','height':90,'width':728,'params':{}};</script>
+      <script src="https://www.highperformanceformat.com/1ee2f40af6f2f7b02d99cfc5235a803d/invoke.js"></script>
+    </div>
+  </div>
+
+  <!-- BREADCRUMB -->
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="../">Home</a>
+    <span aria-hidden="true">›</span>
+    <a href="../#games">Games</a>
+    <span aria-hidden="true">›</span>
+    <span aria-current="page">Sector Arkanoid</span>
+  </nav>
+
+  <!-- GAME HERO -->
+  <div class="game-hero">
+    <div class="game-hero-visual t-arkanoid reveal">
+      <div class="thumb-grid" aria-hidden="true"></div>
+      <div class="thumb-particles" id="tp-a" aria-hidden="true"></div>
+      <div class="card-thumb-bg">
+        <span class="thumb-emoji" style="color:#00f0ff">🧱</span>
+        <span class="thumb-sub">Brick Breaker</span>
+      </div>
+    </div>
+    <div class="reveal" style="transition-delay:.1s">
+      <div class="game-hero-badge" style="background:rgba(0,240,255,0.08);border:1px solid rgba(0,240,255,0.25);color:var(--cyan)">
+        🧱 Arcade · Brick Breaker
+      </div>
+      <h1 class="game-hero-title">Sector Arkanoid</h1>
+      <p class="game-hero-desc">
+        The classic brick breaker, reimagined with neon flair. Control your paddle, launch the ball and smash through walls of bricks. Collect power-ups, chain combos and master every level in this fast-paced arcade experience.
+      </p>
+      <div class="game-meta">
+        <span class="meta-item"><span class="meta-icon">🆓</span> Free to play</span>
+        <span class="meta-item"><span class="meta-icon">⚡</span> Instant browser play</span>
+        <span class="meta-item"><span class="meta-icon">📱</span> Mobile friendly</span>
+        <span class="meta-item"><span class="meta-icon">⭐</span> 4.6 / 5</span>
+      </div>
+      <a href="https://sectorplanton.github.io/SectorArkanoid/" target="_blank" rel="noopener noreferrer" class="play-btn-big">
+        ▶ Play Sector Arkanoid Free
+      </a>
+      <a href="../" class="btn-ghost">← All Games</a>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- GAME INFO -->
+  <section class="section" aria-labelledby="info-h">
+    <div class="section-head reveal">
+      <h2 id="info-h">Game Details</h2>
+      <div class="section-rule"></div>
+    </div>
+    <div class="game-info-grid">
+
+      <div class="info-panel reveal">
+        <h3>🎮 How to Play</h3>
+        <ul>
+          <li>Move your paddle left and right to bounce the ball</li>
+          <li>Break all bricks in a level to progress to the next</li>
+          <li>Collect falling power-ups for extra abilities</li>
+          <li>Don't let the ball fall below your paddle</li>
+          <li>Chain multiple bricks in one pass for bonus points</li>
+          <li>Complete all levels to win the game</li>
+        </ul>
+      </div>
+
+      <div class="info-panel reveal" style="transition-delay:.08s">
+        <h3>⌨️ Controls</h3>
+        <div class="controls-grid">
+          <div class="control-item"><span class="control-key">← →</span><span class="control-desc">Move Paddle</span></div>
+          <div class="control-item"><span class="control-key">Mouse</span><span class="control-desc">Move Paddle</span></div>
+          <div class="control-item"><span class="control-key">Space</span><span class="control-desc">Launch Ball</span></div>
+          <div class="control-item"><span class="control-key">Tap</span><span class="control-desc">Mobile Control</span></div>
+        </div>
+      </div>
+
+      <div class="info-panel reveal" style="transition-delay:.16s">
+        <h3>⚡ Features</h3>
+        <ul>
+          <li>Multiple power-up types (wide paddle, multi-ball, laser)</li>
+          <li>Progressively harder levels with unique brick layouts</li>
+          <li>High score tracking in your browser</li>
+          <li>Smooth 60fps arcade gameplay</li>
+          <li>Works on desktop and mobile devices</li>
+          <li>Zero install, zero signup required</li>
+        </ul>
+      </div>
+
+      <div class="info-panel reveal" style="transition-delay:.24s">
+        <h3>⭐ Player Rating</h3>
+        <div class="rating-row">
+          <span class="rating-num">4.6</span>
+          <div>
+            <div class="stars">★★★★★</div>
+            <div class="rating-sub">Based on 128 ratings</div>
+          </div>
+        </div>
+        <ul>
+          <li>Addictive classic gameplay loop</li>
+          <li>Great power-up variety keeps it fresh</li>
+          <li>Perfect for short or long play sessions</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- MID ADS -->
+  <div class="ad-mid" aria-label="Advertisements">
+    <div class="ad-unit rect">
+      <script>atOptions={'key':'8b25754b73381ac2116d2420ebac2dc5','format':'iframe','height':250,'width':300,'params':{}};</script>
+      <script src="https://www.highperformanceformat.com/8b25754b73381ac2116d2420ebac2dc5/invoke.js"></script>
+    </div>
+    <div class="ad-unit rect">
+      <script>atOptions={'key':'8b25754b73381ac2116d2420ebac2dc5','format':'iframe','height':250,'width':300,'params':{}};</script>
+      <script src="https://www.highperformanceformat.com/8b25754b73381ac2116d2420ebac2dc5/invoke.js"></script>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- MORE GAMES -->
+  <section class="section" aria-labelledby="more-h">
+    <div class="section-head reveal">
+      <h2 id="more-h">More Games</h2>
+      <div class="section-rule"></div>
+      <span class="section-chip">Play Free</span>
+    </div>
+    <div class="more-games-grid">
+      <a href="./galaxy-assault.html" class="game-card reveal">
+        <div class="card-thumb t-galaxy" style="aspect-ratio:4/3">
+          <div class="thumb-grid"></div>
+          <div class="card-thumb-bg"><span class="thumb-emoji" style="color:#ff2d6e;font-size:2.2rem">🚀</span></div>
+          <div class="play-overlay"><div class="play-circle" style="width:44px;height:44px;font-size:16px">▶</div></div>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title" style="font-size:0.8rem">Galaxy Assault</h3>
+          <div class="card-footer"><div class="tags"><span class="tag tag-p">Shooter</span></div><span class="card-play-link">Play →</span></div>
+        </div>
+      </a>
+      <a href="./void-bird.html" class="game-card reveal" style="transition-delay:.07s">
+        <div class="card-thumb t-void" style="aspect-ratio:4/3">
+          <div class="thumb-grid"></div>
+          <div class="card-thumb-bg"><span class="thumb-emoji" style="color:#7b2fff;font-size:2.2rem">🐦</span></div>
+          <div class="play-overlay"><div class="play-circle" style="width:44px;height:44px;font-size:16px">▶</div></div>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title" style="font-size:0.8rem">Void Bird</h3>
+          <div class="card-footer"><div class="tags"><span class="tag tag-v">Casual</span></div><span class="card-play-link">Play →</span></div>
+        </div>
+      </a>
+      <a href="./castle-destroyer.html" class="game-card reveal" style="transition-delay:.14s">
+        <div class="card-thumb t-castle" style="aspect-ratio:4/3">
+          <div class="thumb-grid"></div>
+          <div class="card-thumb-bg"><span class="thumb-emoji" style="color:#ffb400;font-size:2.2rem">🏰</span></div>
+          <div class="play-overlay"><div class="play-circle" style="width:44px;height:44px;font-size:16px">▶</div></div>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title" style="font-size:0.8rem">Castle Destroyer</h3>
+          <div class="card-footer"><div class="tags"><span class="tag tag-g">Strategy</span></div><span class="card-play-link">Play →</span></div>
+        </div>
+      </a>
+      <a href="./neon-blocks.html" class="game-card reveal" style="transition-delay:.21s">
+        <div class="card-thumb t-neon" style="aspect-ratio:4/3">
+          <div class="thumb-grid"></div>
+          <div class="card-thumb-bg"><span class="thumb-emoji" style="color:#d400ff;font-size:2.2rem">🟪</span></div>
+          <div class="play-overlay"><div class="play-circle" style="width:44px;height:44px;font-size:16px">▶</div></div>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title" style="font-size:0.8rem">Neon Blocks</h3>
+          <div class="card-footer"><div class="tags"><span class="tag tag-v">Puzzle</span></div><span class="card-play-link">Play →</span></div>
+        </div>
+      </a>
+      <a href="./serpent-ultra.html" class="game-card reveal" style="transition-delay:.28s">
+        <div class="card-thumb t-serpent" style="aspect-ratio:4/3">
+          <div class="thumb-grid"></div>
+          <div class="card-thumb-bg"><span class="thumb-emoji" style="color:#00ff88;font-size:2.2rem">🐍</span></div>
+          <div class="play-overlay"><div class="play-circle" style="width:44px;height:44px;font-size:16px">▶</div></div>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title" style="font-size:0.8rem">Serpent Ultra</h3>
+          <div class="card-footer"><div class="tags"><span class="tag tag-n">Snake</span></div><span class="card-play-link">Play →</span></div>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- BOTTOM AD -->
+  <div class="ad-bar" aria-label="Advertisement">
+    <div class="ad-unit leaderboard">
+      <script>atOptions={'key':'1ee2f40af6f2f7b02d99cfc5235a803d','format':'iframe','height':90,'width':728,'params':{}};</script>
+      <script src="https://www.highperformanceformat.com/1ee2f40af6f2f7b02d99cfc5235a803d/invoke.js"></script>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-brand-logo">
+            <div class="fli" aria-hidden="true">🕹️</div>
+            <span class="flt"><span class="c1">SECTOR</span><span class="c2">&nbsp;ARCADE</span></span>
+          </div>
+          <p>Free browser arcade games built for instant fun. No installs, no signups — just play. New games added regularly at <strong>sector-games.com</strong>.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Games</h5>
+          <a href="./sector-arkanoid.html">Sector Arkanoid</a>
+          <a href="./galaxy-assault.html">Galaxy Assault</a>
+          <a href="./void-bird.html">Void Bird</a>
+          <a href="./castle-destroyer.html">Castle Destroyer</a>
+          <a href="./neon-blocks.html">Neon Blocks</a>
+          <a href="./serpent-ultra.html">Serpent Ultra</a>
+        </div>
+        <div class="footer-col">
+          <h5>Legal</h5>
+          <a href="../privacy.html">Privacy Policy</a>
+          <a href="../terms.html">Terms of Use</a>
+          <a href="../cookies.html">Cookie Policy</a>
+          <a href="../contact.html">Contact Us</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Sector Arcade · <a href="https://www.sector-games.com">sector-games.com</a> · All rights reserved.</p>
+        <p>Made with ❤️ for arcade fans — <a href="../">Back to top ↑</a></p>
+      </div>
+    </div>
+  </footer>
+
+</div>
+
+<script src="../main.js"></script>
+</body>
+</html>

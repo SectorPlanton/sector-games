@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#7b2fff"/>
+      <stop offset="100%" style="stop-color:#00f0ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="url(#bg)"/>
+  <!-- Joystick body -->
+  <rect x="22" y="36" width="20" height="14" rx="4" fill="rgba(0,0,0,0.5)"/>
+  <!-- Joystick stick -->
+  <line x1="32" y1="36" x2="32" y2="24" stroke="white" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="32" cy="22" r="5" fill="white"/>
+  <!-- Buttons -->
+  <circle cx="46" cy="28" r="4" fill="#ff2d6e"/>
+  <circle cx="16" cy="28" r="4" fill="#00f0ff"/>
+</svg>
