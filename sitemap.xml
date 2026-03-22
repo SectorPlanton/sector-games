@@ -1,82 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml">
-
-  <url>
-    <loc>https://www.sector-games.com/</loc>
-    <lastmod>2025-01-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-
-  <url>
-    <loc>https://www.sector-games.com/games/sector-arkanoid.html</loc>
-    <lastmod>2025-01-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <url>
-    <loc>https://www.sector-games.com/games/galaxy-assault.html</loc>
-    <lastmod>2025-01-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <url>
-    <loc>https://www.sector-games.com/games/void-bird.html</loc>
-    <lastmod>2025-01-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <url>
-    <loc>https://www.sector-games.com/games/castle-destroyer.html</loc>
-    <lastmod>2025-01-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <url>
-    <loc>https://www.sector-games.com/games/neon-blocks.html</loc>
-    <lastmod>2025-01-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <url>
-    <loc>https://www.sector-games.com/games/serpent-ultra.html</loc>
-    <lastmod>2025-01-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <url>
-    <loc>https://www.sector-games.com/privacy.html</loc>
-    <lastmod>2025-01-01</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-
-  <url>
-    <loc>https://www.sector-games.com/terms.html</loc>
-    <lastmod>2025-01-01</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-
-  <url>
-    <loc>https://www.sector-games.com/cookies.html</loc>
-    <lastmod>2025-01-01</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-
-  <url>
-    <loc>https://www.sector-games.com/contact.html</loc>
-    <lastmod>2025-01-01</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.4</priority>
-  </url>
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- MAIN PAGES -->
+  <url><loc>https://sectorplanton.github.io/sector-games/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://sectorplanton.github.io/sector-games/about.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://sectorplanton.github.io/sector-games/contact.html</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://sectorplanton.github.io/sector-games/privacy.html</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://sectorplanton.github.io/sector-games/terms.html</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://sectorplanton.github.io/sector-games/cookies.html</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <!-- GAME PAGES -->
+  <url><loc>https://sectorplanton.github.io/sector-games/games/sector-arkanoid.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://sectorplanton.github.io/sector-games/games/galaxy-assault.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://sectorplanton.github.io/sector-games/games/void-bird.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://sectorplanton.github.io/sector-games/games/castle-destroyer.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://sectorplanton.github.io/sector-games/games/neon-blocks.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://sectorplanton.github.io/sector-games/games/serpent-ultra.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <!-- CATEGORIES -->
+  <url><loc>https://sectorplanton.github.io/sector-games/categories/index.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://sectorplanton.github.io/sector-games/categories/arcade-games.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://sectorplanton.github.io/sector-games/categories/action-games.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://sectorplanton.github.io/sector-games/categories/puzzle-games.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://sectorplanton.github.io/sector-games/categories/casual-games.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <!-- BLOG -->
+  <url><loc>https://sectorplanton.github.io/sector-games/blog/index.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://sectorplanton.github.io/sector-games/blog/best-free-browser-games-2026.html</loc><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://sectorplanton.github.io/sector-games/blog/how-ai-is-changing-gaming-2026.html</loc><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://sectorplanton.github.io/sector-games/blog/most-addictive-online-games.html</loc><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://sectorplanton.github.io/sector-games/blog/can-you-make-game-with-ai.html</loc><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://sectorplanton.github.io/sector-games/blog/top-unblocked-games-school.html</loc><changefreq>monthly</changefreq><priority>0.85</priority></url>
 </urlset>
