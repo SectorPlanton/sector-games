@@ -4,12 +4,14 @@
 
 /* ── GAMES DATA ── */
 var GAMES = [
-  { slug:'sector-arkanoid',  name:'Sector Arkanoid',  icon:'🧱', tags:['arcade','classic','brick breaker','arkanoid'] },
-  { slug:'galaxy-assault',   name:'Galaxy Assault',   icon:'🚀', tags:['shooter','action','space','aliens'] },
-  { slug:'void-bird',        name:'Void Bird',        icon:'🐦', tags:['casual','arcade','flappy','tap'] },
-  { slug:'castle-destroyer', name:'Castle Destroyer', icon:'🏰', tags:['strategy','action','siege','physics'] },
-  { slug:'neon-blocks',      name:'Neon Blocks',      icon:'🟪', tags:['puzzle','arcade','tetris','blocks'] },
-  { slug:'serpent-ultra',    name:'Serpent Ultra',    icon:'🐍', tags:['snake','arcade','power-ups','neon'] },
+  { slug:'sector-arkanoid',   name:'Sector Arkanoid',   icon:'🧱', tags:['arcade','classic','brick breaker','arkanoid'] },
+  { slug:'galaxy-assault',    name:'Galaxy Assault',    icon:'🚀', tags:['shooter','action','space','aliens'] },
+  { slug:'void-bird',         name:'Void Bird',         icon:'🐦', tags:['casual','arcade','flappy','tap'] },
+  { slug:'castle-destroyer',  name:'Castle Destroyer',  icon:'🏰', tags:['strategy','action','siege','physics'] },
+  { slug:'neon-blocks',       name:'Neon Blocks',       icon:'🟪', tags:['puzzle','arcade','tetris','blocks'] },
+  { slug:'serpent-ultra',     name:'Serpent Ultra',     icon:'🐍', tags:['snake','arcade','power-ups','neon'] },
+  { slug:'sector-chess',      name:'Sector Chess',      icon:'♟️', tags:['chess','board','strategy','ai','pvp'] },
+  { slug:'sector-backgammon', name:'Sector Backgammon', icon:'🎲', tags:['backgammon','board','dice','strategy','pvp'] },
 ];
 
 /* Depth detection: 0 = root, 1 = /games/ or /blog/ or /categories/ */
@@ -180,12 +182,14 @@ if(favGrid){
       favGrid.innerHTML = '<div class="fav-empty"><div class="fav-empty-icon">♡</div><p>No favorites yet.</p></div>';
     } else {
       var THUMB = {
-        'sector-arkanoid':  {cls:'t-arkanoid', col:'#00f0ff', tag:'tag-c', tagName:'Arcade'},
-        'galaxy-assault':   {cls:'t-galaxy',   col:'#ff2d6e', tag:'tag-p', tagName:'Shooter'},
-        'void-bird':        {cls:'t-void',     col:'#7b2fff', tag:'tag-v', tagName:'Casual'},
-        'castle-destroyer': {cls:'t-castle',   col:'#ffb400', tag:'tag-g', tagName:'Strategy'},
-        'neon-blocks':      {cls:'t-neon',     col:'#d400ff', tag:'tag-v', tagName:'Puzzle'},
-        'serpent-ultra':    {cls:'t-serpent',  col:'#00ff88', tag:'tag-n', tagName:'Snake'},
+        'sector-arkanoid':   {cls:'t-arkanoid', col:'#00f0ff', tag:'tag-c', tagName:'Arcade'},
+        'galaxy-assault':    {cls:'t-galaxy',   col:'#ff2d6e', tag:'tag-p', tagName:'Shooter'},
+        'void-bird':         {cls:'t-void',     col:'#7b2fff', tag:'tag-v', tagName:'Casual'},
+        'castle-destroyer':  {cls:'t-castle',   col:'#ffb400', tag:'tag-g', tagName:'Strategy'},
+        'neon-blocks':       {cls:'t-neon',     col:'#d400ff', tag:'tag-v', tagName:'Puzzle'},
+        'serpent-ultra':     {cls:'t-serpent',  col:'#00ff88', tag:'tag-n', tagName:'Snake'},
+        'sector-chess':      {cls:'t-arkanoid', col:'#00f0ff', tag:'tag-c', tagName:'Board'},
+        'sector-backgammon': {cls:'t-void',     col:'#7b2fff', tag:'tag-v', tagName:'Board'},
       };
       var html = '<div class="games-grid">';
       favGames.forEach(function(g, i){

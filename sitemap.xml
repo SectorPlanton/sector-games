@@ -14,12 +14,16 @@
   <url><loc>https://sectorplanton.github.io/sector-games/games/castle-destroyer.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://sectorplanton.github.io/sector-games/games/neon-blocks.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://sectorplanton.github.io/sector-games/games/serpent-ultra.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <!-- BOARD GAMES -->
+  <url><loc>https://sectorplanton.github.io/sector-games/games/sector-chess.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://sectorplanton.github.io/sector-games/games/sector-backgammon.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <!-- CATEGORIES -->
   <url><loc>https://sectorplanton.github.io/sector-games/categories/index.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://sectorplanton.github.io/sector-games/categories/arcade-games.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://sectorplanton.github.io/sector-games/categories/action-games.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://sectorplanton.github.io/sector-games/categories/puzzle-games.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://sectorplanton.github.io/sector-games/categories/casual-games.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://sectorplanton.github.io/sector-games/categories/board-games.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <!-- BLOG -->
   <url><loc>https://sectorplanton.github.io/sector-games/blog/index.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://sectorplanton.github.io/sector-games/blog/best-free-browser-games-2026.html</loc><changefreq>monthly</changefreq><priority>0.85</priority></url>
